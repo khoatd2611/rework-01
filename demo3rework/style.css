@@ -44,6 +44,11 @@ body {
     line-height: 28px;
 }
 
+.right-side-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;  
+}
 
 .p-l-30 {
     padding-left: 30px;
@@ -57,12 +62,24 @@ body {
     margin-left: 1px;
 }
 
+.m-l-19 {
+    margin-left: 19px;
+}
+
 .m-l-30 {
     margin-left: 30px;
 }
 
+.m-l-50 {
+    margin-left: 50px;
+}
+
 .m-r-36 {
     margin-right: 36px;
+}
+
+.m-r-50 {
+    margin-right: 50px;
 }
 
 .m-t-23 {
@@ -318,11 +335,6 @@ body {
     padding-right: 34px;
 }
 
-.right-side-bar {
-    flex: 25%;
-    background: #192440;
-}
-
 .timeline-and-stat {
     display: flex;
     justify-content: space-between;
@@ -339,6 +351,58 @@ body {
     align-items: center;
     min-width: 350px;
     padding-top: 24px;
+}
+
+.timeline-info {
+    display: flex;
+    gap: 3px;
+}
+
+.timeline-table {
+    position: relative;
+}
+
+.timeline-info {
+    display: flex;
+    align-items:flex-start;
+    margin-top: 25px;
+}
+
+.timeline-info img {
+    width: 13px;
+    height: 13px;
+    z-index: 1;
+    position: relative;
+    top:4px;
+}
+
+.timeline-info::before {
+    content: "";
+    position: absolute;
+    left: 59px;
+    width: 3px;
+    top: 4px;
+    bottom: 0;
+    background-color: #E5EAEE;
+    /* background-image: url("assets/img/elip.png"); */
+}
+
+.timeline-time {
+    min-width: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.timeline-activity img {
+    height: 36px;
+    width: 36px;
+}
+
+.timeline-activity {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
 }
 
 .top-author {
@@ -378,5 +442,87 @@ body {
     min-width: 350px;
 }
 
+.right-side-bar {
+    flex: 25%;
+    background: #192440;
+    display: flex;
+    color: #FFFFFF;
+    flex-direction: column;
+}
 
-                        
+.nav-icon {
+    display: flex;
+    gap: 15px;
+    margin-left: 21px;
+    margin-top: 56px;
+}
+
+.icon img {
+    transition: 0.2s all ease-in-out;
+    height: 70px;
+    width: 57px;
+    cursor:pointer;
+}
+
+.icon img:hover {
+    height: 86px;
+    width: 70px;
+}
+             
+.target-status {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.status-box {
+    width: 140px;
+    height: 90px;
+    border: 1px dashed #3E4A69;
+    border-radius: 12px;
+    
+}
+
+.status-box .status-num-title {
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+}
+
+.status-box .status-num-subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #546182;
+}
+
+.target-status-line {
+    display: flex;
+    gap: 20px;
+}
+
+.bestseller-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 28px;
+}
+
+.bestseller-item {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.bestseller-item-info .default-text {
+    color: #fff;
+}
+
+.bestseller-item-info .default-subtext {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    color: #546182;
+}
