@@ -1,0 +1,41 @@
+
+.default-btn {
+    display: flex;
+    border-radius: 4px;
+    height: 39px;
+    width: 111px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+.text-btn {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 39px;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+
+.trans-btn {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.white-btn {
+    background: white;
+    color: #80808F !important;
+}
+
+.purpul-btn {
+    background: #5F5CF1;
+}
+
+.green-btn {
+    background: #0BB783;
+}
+
+.green-icon-btn {
+    background: #1BC5BD;
+    width: 149px;
+    height: 40px;
+}
