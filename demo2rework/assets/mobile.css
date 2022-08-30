@@ -1,0 +1,59 @@
+@media only screen and (max-width: 750px) {
+    .first-section {
+        flex-direction: column;
+    }
+
+    .sale-graph {
+        min-width: 100%;
+    }
+
+    .first-col-banner, .second-col-banner {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .first-col-banner, .second-col-banner > *{
+        width: 100%;
+    }
+
+    .second-section {
+        flex-direction: column;
+    }
+
+    .widget-no1 {
+        background-size: cover;
+        min-height: 130px;
+    }
+
+    .upper-banner {
+        background-size: cover;
+        max-width: none;
+    }
+
+    .widget {
+        min-width: auto;
+        width: 100%;
+    }
+
+    .vector {
+        margin-left: 30px;
+    }
+
+    .navbar-left {
+        display: none;
+    }
+
+    .sub-header {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .dropdown-menu-navbar {
+        display: block;
+    }
+
+    .wave-vector img {
+        max-width: 100%;
+        min-height: 123px;
+    }
+}
