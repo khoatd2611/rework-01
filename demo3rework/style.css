@@ -418,6 +418,11 @@ body {
     margin-top: 30px;
 }
 
+.author-list .m-l-15 {
+    flex: 1;
+    padding-left: 15px;
+}
+
 .author-list img {
     height: 50px;
     width: 50px;
@@ -436,6 +441,7 @@ body {
     align-items: center;
     justify-self: right;
     display: flex;
+    margin-right: 30px;
 }
 
 .stat {
@@ -525,4 +531,41 @@ body {
     font-size: 11px;
     line-height: 16px;
     color: #546182;
+}
+
+@media only screen and (max-width:1399px) {
+    .right-side-bar {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .left-side-bar {
+        display: none;
+    }
+
+    .main-table {
+        overflow: auto;
+        /* display: none; */
+    }
+
+    .banner {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .timeline-and-stat {
+        flex-direction: column;
+    }
+
+    .welcome-notif {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+@media only screen and (max-width:500px) {
+    .main-table {
+        overflow: auto;
+    }
+}
 }
