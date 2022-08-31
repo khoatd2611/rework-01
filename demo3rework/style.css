@@ -135,6 +135,8 @@ body {
     flex-direction: column;
     background: #F2F3F5;
     max-height: 1100px;
+    min-width: 250px;
+    max-width: 300px;
 }
 
 .left-title {
@@ -216,6 +218,7 @@ body {
 .search-side input {
     border: none;
     outline: none;
+    background: #F9FAFB;
 }
 
 .search-side img {
@@ -226,22 +229,32 @@ body {
 .banner {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .left-banner {
-    min-width: 360px;
+    /* min-width: 360px; */
     background: #F6D9E3;
+    flex:1;
 }
 
 .right-banner {
-    min-width: 360px;
+    /* min-width: 360px; */
     background: #CBF0F4;
+    flex:1;
 }
 
 .main-table {
     font-family: 'Roboto';
     font-style: normal;
     background: #fff;
+}
+
+.table-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 30px 17px;
 }
 
 .team-progress {
@@ -343,6 +356,7 @@ body {
 
 .timeline {
     background: #fff;
+    flex: 1;
 }
 
 .timeline-t {
@@ -405,6 +419,10 @@ body {
     line-height: 20px;
 }
 
+.timeline .chart {
+    width:-webkit-fill-available;
+}
+
 .top-author {
     display: flex;
     flex-direction: column;
@@ -445,7 +463,7 @@ body {
 }
 
 .stat {
-    min-width: 350px;
+    flex: 1;
 }
 
 .right-side-bar {
@@ -461,6 +479,12 @@ body {
     gap: 15px;
     margin-left: 21px;
     margin-top: 56px;
+}
+
+.nav-icon-mobile input {
+    outline: none;
+    border: none;
+    background: #F9FAFB;
 }
 
 .icon img {
@@ -533,9 +557,23 @@ body {
     color: #546182;
 }
 
+.nav-icon-mobile {
+    display: none;
+}
+
+@media only screen and (max-width:1550px) {
+    .banner {
+        flex-direction: row;
+    }
+}
+
 @media only screen and (max-width:1399px) {
     .right-side-bar {
         display: none;
+    }
+
+    .main-content {
+        padding-right: 50px;
     }
 }
 
@@ -549,13 +587,17 @@ body {
         /* display: none; */
     }
 
+    .main-content {
+        padding-left: 50px;
+    }
+
     .banner {
-        flex-direction: column;
+        flex-direction: row;
         gap: 30px;
     }
 
     .timeline-and-stat {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .welcome-notif {
@@ -563,9 +605,33 @@ body {
         gap: 30px;
     }
 
-@media only screen and (max-width:500px) {
+    .nav-icon-mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .search-side {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:600px) {
     .main-table {
         overflow: auto;
     }
-}
+    
+    .banner {
+        flex-direction: column;
+    }
+
+    .timeline-and-stat {
+        flex-direction: column;
+    }
+
+    .main-content {
+        padding: 0 30px;
+    }
+    .main-table {
+        width: 87vw;
+    }
 }

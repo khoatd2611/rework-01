@@ -47,6 +47,19 @@
             </div>
         </section>
         <section class="main-content m-t-50">
+            <div class="nav-icon-mobile">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 7H3C2.4 7 2 6.6 2 6V4C2 3.4 2.4 3 3 3H21C21.6 3 22 3.4 22 4V6C22 6.6 21.6 7 21 7Z" fill="currentColor"></path>
+                    <path opacity="0.3" d="M21 14H3C2.4 14 2 13.6 2 13V11C2 10.4 2.4 10 3 10H21C21.6 10 22 10.4 22 11V13C22 13.6 21.6 14 21 14ZM22 20V18C22 17.4 21.6 17 21 17H3C2.4 17 2 17.4 2 18V20C2 20.6 2.4 21 3 21H21C21.6 21 22 20.6 22 20Z" fill="currentColor"></path>
+                </svg>
+                
+                    <div class="search-input">
+                        <img src="assets/img/gen004.png" alt="">
+                        <input type="text" placeholder="Quick Search">
+                    </div>
+                    <img src="assets/img/notification.png" alt="">
+                
+            </div>
             <div class="welcome-notif">
                 <div>
                     <p class="default-text">Hello, Paul</p>
@@ -104,7 +117,7 @@
                     </div>                  
                 </div>
             </div>
-            <div class="main-table bd-rad-24">
+            <div class="main-table bd-rad-24" style="display: block;">
                 <div class="team-progress m-l-30 m-t-23 m-r-36">
                     <div>
                         <p>Teams Progress</p>
@@ -120,8 +133,8 @@
                           </select>
                     </div>
                 </div>
-                
-                <table class="table">
+                <div style="overflow:auto;">
+                    <table class="table">
                         <tr>
                             <th class="checkbox p-l-30">
                                 <input type="checkbox">
@@ -223,8 +236,47 @@
                                 <input type="button" name="View" id="" value="View">
                             </td>
                         </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="main-table" style="overflow: auto ; display: none;">
+                <div class="table-title">
+                    <div class="left-title-table">
+                        <p>Teams Progress</p>
+                        <p class="sub-text-team-progress">890,344 Sales</p>
+                    </div>
+                    <div class="right-list-users">
+                        <select>
+                            <option value="">All Users</option>
+                            <option value="">Brad Simmons</option>
+                            <option value="">Jessie Clarcson</option>
+                            <option value="">Lebron Wayde</option>
+                            <option value="">Natali Trump</option>
+                          </select>
+                    </div>
+                </div>
+                <table class="table">
+                    <tr>
+                        <th>Checkbox</th>
+                        <th>AUTHORS</th>
+                        <th>COMPANY</th>
+                        <th>PROGRESS</th>
+                        <th>ACTION</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="author">
+                            <img src="assets/img/avatar/01.png" alt="">
+                            <div>
+                                <p class="author-name">Brad Simmons</p>
+                                <p class="author-skill">HTML, JS, ReactJS</p>
+                            </div>
+                        </td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque est nisi molestias repellat recusandae itaque explicabo inventore dicta dolores cum corporis, maiores vitae eaque porro dignissimos sed. Quasi, cumque doloremque.</td>
+                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique ipsa enim aspernatur facere sint. Dignissimos impedit aliquam enim voluptate odit! Natus nostrum rem et at consequatur vitae quos, maiores similique.</td>
+                        <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet mollitia aliquid nesciunt maiores nulla fugit, tenetur reiciendis vitae velit ipsa! Debitis et reiciendis nulla sit, repellat ea facere excepturi nobis.</td>
+                    </tr>
                 </table>
-                
             </div>
             <div class="timeline-and-stat">
                 <div class="timeline bd-rad-12">
@@ -271,7 +323,8 @@
                             </div>
                             <img class=" m-r-36" src="assets/img/dropdown.png" alt="">
                         </div>
-                        <svg class="m-t-27" width="350" height="104" viewBox="0 0 350 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <img class="chart" src="assets/img/Chart.png" alt="">
+                        <!-- <svg class="m-t-27" width="350" height="104" viewBox="0 0 350 104" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path opacity="0.3" d="M19.0568 62.0852H-4V104H376V2H374.205C366.2 2 358.527 5.19892 352.894 10.8851L341.121 22.7673C335.487 28.4535 327.814 31.6525 319.81 31.6525H317.379C309.374 31.6525 301.701 34.8514 296.068 40.5376L288.934 47.7378C283.3 53.424 275.627 56.623 267.622 56.623H263.645C255.641 56.623 247.968 53.424 242.334 47.7378L221.67 26.8818C216.036 21.1956 208.364 17.9967 200.359 17.9967H193.289C185.284 17.9967 177.612 21.1956 171.978 26.8819L157.886 41.105C152.252 46.7912 144.579 49.9902 136.575 49.9902H126.026C118.021 49.9902 110.348 46.7912 104.714 41.105L104.152 40.5376C98.5184 34.8514 90.8457 31.6525 82.8412 31.6525H74.225C66.2204 31.6525 58.5477 34.8514 52.9139 40.5376L40.3679 53.2001C34.7341 58.8863 27.0614 62.0852 19.0568 62.0852Z" fill="url(#paint0_linear_436_11085)"/>
                             <path d="M376 104V2H374.205C366.2 2 358.527 5.19892 352.894 10.8851L341.121 22.7673C335.487 28.4535 327.814 31.6525 319.81 31.6525H317.379C309.374 31.6525 301.701 34.8514 296.067 40.5376L288.934 47.7378C283.3 53.424 275.627 56.6229 267.622 56.6229H263.645C255.641 56.6229 247.968 53.424 242.334 47.7378L221.67 26.8818C216.036 21.1956 208.364 17.9967 200.359 17.9967H193.289C185.284 17.9967 177.612 21.1956 171.978 26.8819L157.886 41.105C152.252 46.7912 144.579 49.9902 136.575 49.9902H126.026C118.021 49.9902 110.348 46.7912 104.714 41.105L104.152 40.5376C98.5184 34.8514 90.8458 31.6525 82.8412 31.6525H74.225C66.2204 31.6525 58.5477 34.8514 52.9139 40.5376L40.3679 53.2001C34.7341 58.8863 27.0614 62.0852 19.0568 62.0852H-4V104" stroke="#00B2FF" stroke-width="3"/>
                             <defs>
@@ -280,7 +333,7 @@
                             <stop offset="1" stop-color="white" stop-opacity="0"/>
                             </linearGradient>
                             </defs>
-                        </svg>  
+                        </svg>   -->
                         <div class="top-author bd-rad-12 m-l-30 ">
                             <div class="author-list first-author ">
                                 <img src="assets/img/pLogo.png" alt="">

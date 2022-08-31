@@ -512,6 +512,7 @@ a {
 .author {
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 
 .main-table th {
@@ -535,6 +536,12 @@ a {
 .dropdown-menu-navbar {
     display: none;
 }
+
+.green-icon-btn .text-btn {
+    display: flex;
+    gap: 10px;
+}
+
 
 @media only screen and (max-width: 992px) and (min-width: 751px) {
     .first-section {

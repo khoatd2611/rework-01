@@ -39,3 +39,11 @@
     width: 149px;
     height: 40px;
 }
+
+.sub-header-btn a .default-btn:hover {
+    background: white;
+}
+
+.sub-header-btn a .text-btn:hover {
+    color: #80808F !important;
+}
